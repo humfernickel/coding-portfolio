@@ -1,67 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="st">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="sidebar">
-            <div class="dashboard-logo">
-                <h1>Dashboard</h1>
-                <img src="" alt="dashboard-logo">
-            </div>
-            <div class="sidebar-top-menu">
-                <ul>
-                    <li class="icon-row">
-                        <div><img src="" alt="home"></div>
-                        Home
-                    </li>
-                    <li class="icon-row">
-                        <div><img src="" alt="profile"></div>
-                        Profile
-                    </li>
-                    <li class="icon-row">
-                        <div><img src="" alt="messages"></div>
-                        Messages
-                    </li>
-                    <li class="icon-row">
-                        <div><img src="" alt="history"></div>
-                        History
-                    </li>
-                    <li class="icon-row">
-                        <div><img src="" alt="tasks"></div>
-                        Tasks
-                    </li>
-                </ul>
-                <li class="icon-row">
-                    <div><img src="" alt="communities"></div>
-                    Communities
-                </li>
-            </div>
+      <div class="sidebar">
+        <div class="dashboard-logo">
+          <h1>Dashboard</h1>
+          <img src="" alt="dashboard-logo" />
+        </div>
+        <div class="sidebar-top-menu">
+          <ul>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="home" /></div>
+              Home
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="profile" /></div>
+              Profile
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="messages" /></div>
+              Messages
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="history" /></div>
+              History
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="tasks" /></div>
+              Tasks
+            </li>
+          </ul>
+          <li class="icon-row">
+            <div class="icon"><img src="" alt="communities" /></div>
+            Communities
+          </li>
         </div>
         <div class="sidebar-bottom-menu">
-            <ul>
-                <li class="icon-row">
-                    <div><img src="" alt="settings"></div>
-                    Settings
-                </li>
-                <li class="icon-row">
-                    <div><img src="" alt="support"></div>
-                    Support
-                </li>
-                <li class="icon-row">
-                    <div><img src="" alt="privacy"></div>
-                    Privacy
-                </li>
-            </ul>
+          <ul>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="settings" /></div>
+              Settings
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="support" /></div>
+              Support
+            </li>
+            <li class="icon-row">
+              <div class="icon"><img src="" alt="privacy" /></div>
+              Privacy
+            </li>
+          </ul>
         </div>
-        <div class="header"></div>
-        <div class="content"></div>
+      </div>
+
+      <div class="header">
+        <div class="top-header-bar">
+          <div class="search-bar">
+            <div class="search-icon icon"></div>
+            <div class="search-text">Search here</div>
+          </div>
+          <div class="top-right">
+            <div class="notification-icon icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>bell-ring-outline</title>
+                <path
+                  d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z"
+                />
+              </svg>
+            </div>
+            <div class="profile-pic">
+              <img src="smiley-face-active-artist.jpg" alt="" />
+            </div>
+            <div class="profile-name">
+              <h3>Julianne Wong</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-bar">
+          <div class="nav-left">
+            <div class="profile-pic" id="large">
+              <img src="smiley-face-active-artist.jpg" alt="" />
+            </div>
+            <div class="intro">
+              <p>Hi there,</p>
+              <h2>Julianne Wong (@julianne_wong)</h2>
+            </div>
+          </div>
+          <div class="nav-right">
+            <ul class="upload-links">
+              <li class="button">
+                <button type="button">New</button>
+              </li>
+              <li class="button">
+                <button type="button">Upload</button>
+              </li>
+              <li class="button">
+                <button type="button">Share</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="stuff">
+        <div class="my-projects">
+          <h3 class="stuff-title">My Projects</h3>
+          <div class="cards">
+            <div class="card">
+              <h3>Project 1</h3>
+              <p>
+                Ipsa alias omnis iste magnam dicta dolorem incidunt itaque
+                facilis nemo aperiam. Reprehenderit porro eos dignissimos beatae
+                et voluptatem? Asperiores, sed praesentium!
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Project 2</h3>
+              <p>
+                Risus commodo viverra maecenas accumsan lacus vel. Nunc eget
+                lorem dolor sed viverra ipsum nunc aliquet bibendum. Nec
+                sagittis aliquam malesuada bibendum arcu vitae elementum.
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Project 3</h3>
+              <p>
+                Amet purus gravida quis blandit turpis cursus. Enim facilisis
+                gravida neque convallis a cras semper. Dapibus ultrices in
+                iaculis nunc sed augue.
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Project 4</h3>
+              <p>
+                Turpis egestas integer eget aliquet nibh praesent tristique
+                magna. Neque laoreet suspendisse interdum consectetur libero.
+                Etiam erat velit scelerisque in dictum non consectetur a. Amet
+                facilisis magna etiam tempor orci. Ipsum nunc aliquet bibendum
+                enim facilisis gravida neque convallis a.
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Project 5</h3>
+              <p>
+                Turpis egestas integer eget aliquet nibh praesent tristique
+                magna. Neque laoreet suspendisse interdum consectetur libero.
+                Etiam erat velit scelerisque in dictum non consectetur a.
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Project 6</h3>
+              <p>
+                Ullamcorper morbi tincidunt ornare massa eget egestas purus. Dis
+                parturient montes nascetur ridiculus. Euismod quis viverra nibh
+                cras pulvinar mattis. Mattis rhoncus urna neque viverra justo
+                nec. Morbi leo urna
+              </p>
+              <div class="clickables">
+                <ul>
+                  <li>star</li>
+                  <li>save</li>
+                  <li>Share</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="announcements">
+          <h3 class="stuff-title">Announcements</h3>
+          <div class="announcement-container">
+            <div class="announcement">
+              <h4>Site Maintenance</h4>
+              <p class="overflow">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet facilisis magna etiam tempor orci eu. In hendrerit gravida rutrum quisque non tellus orci ac auctor. Adipiscing at in tellus integer feugiat scelerisque varius morbi. Varius quam quisque id diam. </p>
+            </div>
+            <div class="announcement">
+              <h4>Community Share Day</h4>
+              <p  class="overflow">Laoreet suspendisse interdum consectetur libero. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat. Enim eu turpis egestas pretium aenean pharetra. Etiam non quam lacus suspendisse faucibus. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Eget felis eget nunc lobortis mattis. </p>
+            </div>
+            <div class="announcement">
+              <h4>Updated Privacy Policy</h4>
+              <p  class="overflow">Aliquam vestibulum morbi blandit cursus. Non arcu risus quis varius quam quisque id diam. Sodales neque sodales ut etiam sit amet nisl purus in. Massa tincidunt dui ut ornare lectus sit amet est. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Donec enim diam vulputate ut pharetra sit amet aliquam id.</p>
+            </div>
+          </div>
+        </div>
+        <div class="check-out">
+          <h3 class="stuff-title">Check them out!</h3>
+          <div class="check-container">
+            <div class="person">
+              <div class="profile-pic">
+                <img src="smiley-face-active-artist.jpg" alt="" />
+              </div>
+              <div class="check-right">
+                <h5>@tegan</h5>
+                <p>World Peace Builder</p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-pic">
+                <img src="smiley-face-active-artist.jpg" alt="" />
+              </div>
+              <div class="check-right">
+                <h5>@morgan</h5>
+                <p>Super Cool Project</p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-pic">
+                <img src="smiley-face-active-artist.jpg" alt="" />
+              </div>
+              <div class="check-right">
+                <h5>@kendall</h5>
+                <p>Life Changing App</p>
+              </div>
+            </div>
+            <div class="person">
+              <div class="profile-pic">
+                <img src="smiley-face-active-artist.jpg" alt="" />
+              </div>
+              <div class="check-right">
+                <h5>@alex</h5>
+                <p>No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>

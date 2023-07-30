@@ -1,0 +1,251 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: black;
+    /* overflow: hidden; */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 125px 1fr;
+    grid-template-columns: clamp(100px, 25%, 260px) auto;
+    grid-template-areas: "dashboard header""dashboard stuff";
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+svg {
+    width: 25px;
+    height: 25px
+}
+
+.sidebar {
+    background-color: azure;
+    grid-area: dashboard;
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr;
+}
+
+/* header */
+.header {
+    background-color: burlywood;
+    grid-area: header;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "topbar""navbar";
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    padding: 0px 40px;
+}
+
+.top-header-bar {
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: 2fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: topbar;
+    gap: 10%;
+    /* padding: 0px 30px; */
+}
+
+.search-bar {
+    display: grid;
+    grid-area: 1 / 1 / 2 / 2;
+    grid-template-columns: 30px minmax(auto, 450px);
+    align-items: center;
+
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+}
+
+.search-text {
+    background-color: bisque;
+    border-radius: 8px;
+    margin-left: 5px;
+    padding: 4px;
+}
+
+.top-right {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    /* padding: 10px; */
+    gap: 20px;
+    /* background-color: brown; */
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+#large {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.nav-bar {
+    display: grid;
+    grid-template-columns: 50% auto 35%;
+    /* grid-template-areas: "nav-left" "." "nav-right"; */
+    grid-area: navbar;
+    padding-bottom: 15px;
+    /* background-color: red; */
+    gap: 10px;
+}
+
+.nav-left {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: [pfp] min-content [intro] auto;
+    gap: 15px;
+    align-items: center;
+}
+
+.intro {
+    -ms-grid-columns: intro;
+}
+
+.nav-right {
+    grid-column: 3;
+    display: grid;
+}
+
+.upload-links {
+    display: grid;
+    grid-template-columns: [new] 1fr [upload] 1fr [share] 1fr;
+    /* justify-items: center; */
+    align-items: center;
+    gap: 10px;
+
+}
+
+.button button {
+    width: 100%;
+}
+
+/* stuff */
+.stuff {
+    grid-area: stuff;
+    display: grid;
+    grid-template-columns: [projects] 1fr [announce-check] auto;
+    grid-template-rows: [announce] min-content [check] auto;
+    grid-template-areas: "project announcements""project check";
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.my-projects {
+    grid-area: project;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+.card {
+    display:grid;
+    border: 2px blueviolet solid;
+    padding: 30px;
+    justify-content: start;
+    align-items: start;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.announcement-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    background-color: blue;
+    text-overflow: ellipsis;
+
+}
+
+.announcement {
+    border: 2px blueviolet solid;
+    padding: 30px;
+
+}
+.overflow {
+    display: -webkit-box;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+.check-out {
+    grid-area: check;
+
+}
+
+.check-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+
+}
+
+.person {
+    border: 2px blueviolet solid;
+    padding: 30px;   
+    display: grid;
+    grid-template-columns: [prof] min-content [tag] auto;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.person .profile-pic {
+    border: 2px blueviolet solid;
+    grid-column: prof;
+}
+
+.check-right{
+    grid-column: tag;
+    border: 2px blueviolet solid;
+    display: grid;
+    align-items: start;
+    grid-template-rows:min-content min-content;
+
+}
+h2 {
+    font-size: 20px;
+}
+
+.stuff-title {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
